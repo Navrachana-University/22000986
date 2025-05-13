@@ -1,3 +1,4 @@
+#**Author**
 **Name: Pathan Fiza Faiyazkhan                         
 Enrollment ID: 22000986**
 
@@ -27,10 +28,14 @@ flex looplang.l
 ```
 
 **Compile the Generated Code:**
-```bash gcc lex.yy.c looplang.tab.c 
+```bash
+gcc lex.yy.c looplang.tab.c 
+```
 
 **Run the Compiler:**
-```a.exe```
+```bash
+a.exe
+```
 The program will prompt you to enter your LoopLang code
 Type your code and press Ctrl+D (EOF) when finished
 The compiler will output the generated Three Address Code
@@ -43,6 +48,7 @@ Error messages will be displayed for invalid syntax
 
 
 **Example Input:**
+```bash
 choose(x) {
   option 1: 
     y = 10;
@@ -54,16 +60,16 @@ choose(x) {
     y = 30;
     fiza;
 }
+```
 
 **Example Execution:**
-Enter your code:
+```bash
 choose(x) {
   option 1: y = 10; fiza;
   option 2: y = 20; fiza;
   nomatch: y = 30; fiza;
 }
-
-**Three Address Code:**
+Three Address Code:
   // Option 1
   L1:
     y = 10
@@ -88,5 +94,6 @@ choose(x) {
   END:
     fiza
     return
+```
 
 The project demonstrates basic compiler construction techniques including lexical analysis, parsing, and intermediate code generation.
