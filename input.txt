@@ -1,0 +1,11 @@
+choose(x) {
+  option 1:
+    a = 10 + 20;
+    fiza;
+  option 2:
+    b = 30;
+    fiza;
+  nomatch:
+    z = 0;
+    fiza;
+}
