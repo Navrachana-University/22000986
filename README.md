@@ -8,10 +8,10 @@ Project named as LoopL or Switch-Case User-Defined is a simple programming langu
 ## **Key Features:**
 - Variables and Assignments: Supports variable assignments like x = 5
 - Arithmetic Operations: Supports basic operations like addition (+)
-- Switch Case User Defined:```Choose``` Statement in place of ```Switch```
-                         ```option``` as ```case``` that compare against numeric values
-                         ```nomatch``` as the ```default``` case
-                         ```fiza``` as the ```break``` statement (a unique keyword)
+- Switch Case User Defined:```Choose``` Statement in place of ```Switch```.
+                         ```option``` as ```case``` that compare against numeric values.
+                         ```nomatch``` as the ```default``` case.
+                         ```fiza``` as the ```break``` statement (a unique keyword).
 Three Address Code Generation: Outputs intermediate code suitable for further compilation
 
 ## **Prerequisites:**
