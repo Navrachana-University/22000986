@@ -6,9 +6,9 @@ Enrollment ID: 22000986**
 Project named as LoopL or Switch-Case User-Defined is a simple programming language designed to demonstrate a custom conditional construct called choose in place of switch using Flex and Bison. The choose statement evaluates a variable and executes a block of code associated with a matching option value. If no option matches, a nomatch block is executed. The language supports basic arithmetic expressions (e.g., addition), variable assignments, and a fiza keyword to terminate option blocks. This project includes a lexer and parser that generate three-address code (TAC) from LoopLang input.
 
 ## **Key Features:**
-Variables and Assignments: Supports variable assignments like x = 5
-Arithmetic Operations: Supports basic operations like addition (+)
-Switch Case User Defined:```Choose``` Statement in place of ```Switch```
+- Variables and Assignments: Supports variable assignments like x = 5
+- Arithmetic Operations: Supports basic operations like addition (+)
+- Switch Case User Defined:```Choose``` Statement in place of ```Switch```
                          ```option``` as ```case``` that compare against numeric values
                          ```nomatch``` as the ```default``` case
                          ```fiza``` as the ```break``` statement (a unique keyword)
@@ -64,37 +64,6 @@ choose(x) {
 ```
 
 ## **Example Execution:**
-```bash
-choose(x) {
-  option 1: y = 10; fiza;
-  option 2: y = 20; fiza;
-  nomatch: y = 30; fiza;
-}
-Three Address Code:
-  // Option 1
-  L1:
-    y = 10
-    goto END
-
-  // Option 2
-  L2:
-    y = 20
-    goto END
-
-  // nomatch case
-  L3:
-    y = 30
-    goto END
-
-  // Decision logic
-  START:
-    if (x == 1) goto L1
-    if (x == 2) goto L2
-    goto L3
-
-  END:
-    fiza
-    return
-```
+![Reference Image](/output.jpg)
 
 The project demonstrates basic compiler construction techniques including lexical analysis, parsing, and intermediate code generation.
