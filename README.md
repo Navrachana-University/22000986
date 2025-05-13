@@ -21,11 +21,13 @@ Three Address Code Generation: Outputs intermediate code suitable for further co
 
 **Compilation Steps:**
 Generate Lexer and Parser:
-```bison -d looplang.y```
-```flex looplang.l```
+```bash
+bison -d looplang.y
+flex looplang.l
+```
 
 **Compile the Generated Code:**
-```gcc lex.yy.c looplang.tab.c ```
+```bash gcc lex.yy.c looplang.tab.c 
 
 **Run the Compiler:**
 ```a.exe```
