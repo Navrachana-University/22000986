@@ -21,14 +21,14 @@ Three Address Code Generation: Outputs intermediate code suitable for further co
 
 **Compilation Steps:**
 Generate Lexer and Parser:
-bison -d looplang.y
-flex looplang.l
+```bison -d looplang.y```
+```flex looplang.l```
 
 **Compile the Generated Code:**
-gcc lex.yy.c looplang.tab.c 
+```gcc lex.yy.c looplang.tab.c ```
 
 **Run the Compiler:**
-a.exe
+```a.exe```
 The program will prompt you to enter your LoopLang code
 Type your code and press Ctrl+D (EOF) when finished
 The compiler will output the generated Three Address Code
@@ -60,7 +60,8 @@ choose(x) {
   option 2: y = 20; fiza;
   nomatch: y = 30; fiza;
 }
-Three Address Code:
+
+**Three Address Code:**
   // Option 1
   L1:
     y = 10
@@ -85,4 +86,5 @@ Three Address Code:
   END:
     fiza
     return
+
 The project demonstrates basic compiler construction techniques including lexical analysis, parsing, and intermediate code generation.
